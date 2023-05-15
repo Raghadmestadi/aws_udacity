@@ -1,0 +1,23 @@
+Estimate summary,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,
+0,19102.007000000000,229224.08,USD,,,,,
+,,* Includes upfront cost,,,,,,
+,,,,,,,,
+,,,,,,,,
+Detailed Estimate,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,2309.12,27709.44,USD,"Data transfer out to internet (3 TB per month), Data transfer out to origin (100 TB per month), Number of requests (HTTPS) (1000 per month)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,7819.52,93834.24,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),web server,Amazon EC2,0,3286.46,39437.52,USD,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (inf1.6xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),application server,Amazon EC2,0,1826.46,21917.52,USD,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (inf1.6xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),master db,Amazon RDS for MySQL,0,839.5435,10074.52,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (1), Instance type (db.m2.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1 TB), Total Size of Backup Processed for Export (GB) (1 per week), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (1.50)"
+My Estimate,US West (Oregon),replica,Amazon RDS for MySQL,0,1267.8635,15214.36,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (2), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1 TB), Total Size of Backup Processed for Export (GB) (1 per week), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (1.50)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,706.64,8479.68,USD,S3 Standard storage (30 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,
+My Estimate,US East (N. Virginia),vpc,VPN Connection,0,915,10980.00,USD,"Working days per month (22), Number of subnet associations (4), Number of Site-to-Site VPN Connections (2)"
+My Estimate,US East (N. Virginia),vpc,Network Address Translation (NAT) Gateway,0,131.4,1576.80,USD,Number of NAT Gateways (2)
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.","I increased instance size, and made it dedicated. Build the DB to handle more capacity and size of data to be stored with backup and snapshot feature. Increase connections on LB, with more network enhancements. ",,,,,,,

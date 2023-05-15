@@ -1,0 +1,24 @@
+﻿Estimate summary,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,
+199.728,5117.6,61610.93,USD,,,,,
+,,* Includes upfront cost,,,,,,
+,,,,,,,,
+,,,,,,,,
+Detailed Estimate,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,2.26,27.12,USD,"Data transfer out to internet (3 GB per month), Data transfer out to origin (100 GB per month), Number of requests (HTTPS) (1000 per month)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,3566.05,42792.6,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),web server,Amazon EC2 ,99.864,0,99.86,USD,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (t4g.nano), Pricing strategy (Compute Savings Plans 3yr All Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),application server,Amazon EC2 ,99.864,0,99.86,USD,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (t4g.nano), Pricing strategy (Compute Savings Plans 3yr All Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),master db,Amazon RDS for MySQL,0,204.3,2451.6,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (1), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Single-AZ), Pricing strategy (OnDemand)"
+My Estimate,US West (Oregon),replica,Amazon RDS for MySQL,0,204.3,2451.6,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (1), Instance type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Single-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,94.29,1131.48,USD,S3 Standard storage (4 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,
+My Estimate,US East (N. Virginia),vpc,VPN Connection,0,915,10980,USD,"Working days per month (22), Number of subnet associations (4), Number of Site-to-Site VPN Connections (2)"
+My Estimate,US East (N. Virginia),vpc,Network Address Translation (NAT) Gateway,0,131.4,1576.8,USD,Number of NAT Gateways (2)
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+"I reduce the S3 Standard storage ,Processed bytes (EC2 Instances and IP addresses as targets) and Average number of new connections per ALB",,,,,,,,
